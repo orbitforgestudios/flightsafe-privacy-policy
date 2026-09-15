@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for FlightSafe by Orbit Forge Studios">
+  <title>Privacy Policy - FlightSafe</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #111821;
+      --text: #e8edf2;
+      --muted: #a9b4bf;
+      --accent: #5ee7b7;
+      --border: #26313d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 30px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2.2rem;
+      letter-spacing: 0.5px;
+    }
+    .subtitle {
+      color: var(--accent);
+      font-weight: 600;
+      margin: 0;
+    }
+    .updated {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.35rem;
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+    p { margin: 10px 0; }
+    ul { padding-left: 24px; }
+    li { margin: 8px 0; }
+    strong { color: #fff; }
+    .contact {
+      word-break: break-word;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding-top: 15px;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 20px 14px 40px; }
+      section { padding: 18px; }
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <h1>Privacy Policy for FlightSafe</h1>
+      <p class="subtitle">Know the Unknown</p>
+      <p class="updated"><strong>Last Updated:</strong> September 16, 2026</p>
+    </header>
+
+    <section>
+      <p>
+        Orbit Forge Studios ("we," "us," or "our") operates the FlightSafe
+        mobile application (the "App"). We are committed to protecting your
+        privacy and ensuring transparency about how we handle data.
+      </p>
+      <p>
+        Because FlightSafe is a tactical tool designed for security, aviation,
+        and contested RF environments, operational security and data privacy
+        are our highest priorities.
+      </p>
+    </section>
+
+    <section>
+      <h2>1. Data Collection and Usage</h2>
+
+      <h3>Location Data (GPS &amp; Network)</h3>
+      <ul>
+        <li><strong>Why we need it:</strong> The core function of the App is to detect GNSS (GPS) spoofing and jamming. To do this, the App requires access to precise location data (Foreground and Background).</li>
+        <li><strong>How it is used:</strong> The App continuously analyzes your location, speed, altitude, and raw satellite telemetry to calculate integrity scores and detect anomalies.</li>
+        <li><strong>Where it is stored:</strong> All location monitoring sessions and forensic logs are stored locally on your device in a private, encrypted database (using Room).</li>
+        <li><strong>Do we transmit it?</strong> No. Orbit Forge Studios does not collect, transmit, upload, or sell your location history, tracking data, or session logs to our servers or any third-party servers.</li>
+      </ul>
+
+      <h3>Sensor Data (Accelerometer, Gyroscope, Compass)</h3>
+      <ul>
+        <li><strong>Why we need it:</strong> To validate GPS movement against physical movement (Motion Validation &amp; Heading Validation).</li>
+        <li><strong>How it is used:</strong> Sensor data is processed entirely in memory in real time. It is not permanently stored or transmitted.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. In-App Purchases &amp; Billing</h2>
+      <p>
+        If you choose to purchase "FlightSafe Pro," the transaction is processed
+        securely through the Google Play Billing Library.
+      </p>
+      <ul>
+        <li>We do not have access to your credit card information, name, or billing address.</li>
+        <li>Google Play provides us with an anonymous purchase token to verify that the Pro features should be unlocked on your device.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Third-Party Services (AdMob)</h2>
+      <p>
+        If you are using the free version of FlightSafe, we use Google AdMob
+        to serve banner advertisements.
+      </p>
+      <ul>
+        <li>Google AdMob may collect and use data (such as your device's Advertising ID, IP address, and interaction data) to provide targeted advertisements.</li>
+        <li>You can opt out of personalized advertising through the advertising/privacy controls available in your Android device settings.</li>
+        <li><strong>Note for Pro Users:</strong> Purchasing FlightSafe Pro entirely disables the AdMob SDK. No ad-related tracking or data collection occurs once the App is upgraded.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Permissions Explained</h2>
+      <p>To function correctly, the App may request the following permissions:</p>
+      <ul>
+        <li><strong>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION:</strong> Required to access GPS hardware and network location for cross-validation.</li>
+        <li><strong>ACCESS_BACKGROUND_LOCATION:</strong> Required to continue monitoring and alerting you if the App is minimized.</li>
+        <li><strong>ACTIVITY_RECOGNITION / BODY_SENSORS:</strong> Required to access inertial or activity-related sensor information used to detect potential spoofing conditions where GPS movement differs from physical movement.</li>
+        <li><strong>POST_NOTIFICATIONS:</strong> Required to show the foreground service status and deliver high-risk threat alerts.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Data Retention &amp; Deletion</h2>
+      <p>
+        Since your session logs and forensic data are stored exclusively on your
+        local device:
+      </p>
+      <ul>
+        <li>You have complete control over your data.</li>
+        <li>You can delete historical session data through the App's available data-management controls, by clearing the App's data in Android Settings, or by uninstalling the App.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Children's Privacy</h2>
+      <p>
+        FlightSafe is a professional tactical tool and is not intended for use
+        by children under the age of 13. We do not knowingly collect personally
+        identifiable information from children.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. We will notify you
+        of any changes by posting the new Privacy Policy on this page and
+        updating the "Last Updated" date.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Contact Us</h2>
+      <p class="contact">
+        If you have any questions or suggestions about this Privacy Policy,
+        please contact us at:
+        <strong>support@orbitforgestudios.com</strong>
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2026 Orbit Forge Studios. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
